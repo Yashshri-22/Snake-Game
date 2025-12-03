@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: url("assets/snake_bg.jpg");
+    background-size: 220vh 100vh;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-attachment: scroll;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    background: linear-gradient(rgb(107, 243, 107),rgb(247, 247, 141));
+    width: 90vmin;
+    height: 92vmin;
+    border: 5px double black;
+    border-radius: 6px;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background-color: red;
+}
+
+.food{
+    background-color: purple;
+}
